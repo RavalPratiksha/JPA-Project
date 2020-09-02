@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="CJV805">
+<class>cjv805.lab4.model.Customer</class>
+<class>cjv805.lab4.model.SalesRepresentative</class>
+<class>cjv805.lab4.model.Contract</class>
+
+<properties>
+<property name="javax.persistence.jdbc.url" value="jdbc:mysql://mymysql.senecacollege.ca/db_praval5"/>
+<property name="javax.persistence.jdbc.user" value="db_praval5"/>
+<property name="javax.persistence.jdbc.password" value="eZy3yB4(p]"/>
+<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+<property name="eclipselink.logging.level" value="FINE"/>
+<!--  EclipseLink should create the database automatically  -->
+<property name="eclipselink.ddl-generation" value="create-tables"/>
+</properties>
+</persistence-unit>
+</persistence>

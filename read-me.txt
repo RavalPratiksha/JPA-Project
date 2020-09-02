@@ -1,0 +1,77 @@
+
+To Run The Application : 
+
+Run Manager.java Class
+This Class is the Main Class which Run the Application.
+Manager Class Manages Three Categories :
+ 1. Customer
+ 2. Sales Representative
+ 3. Contract
+
+
+Question 1 
+
+1) Customer.java
+
+cjv805.lab3.model Package contains Customer.java Class Which generates Customer Instance Variables
+like Customer ID, Name , Email , Age .
+It Creates a Table Named Customer in MySql Workbench.
+
+2) SalesRepresentative.java
+
+cjv805.lab3.model Package contains SalesRepresentative.java Class Which generates Customer Instance Variables
+like Sales Representaive Id, Name ,Salary , CustomerSet
+It Creates a Table Named SalesRepresentative in MySql Workbench.
+
+
+3) To Perform the CURD Operation on Customer and SalesRepresentative table
+I have Created Two Class :
+
+CustomerManager.java 
+SalesRepresentativeManager.java
+
+Both Classes have Method Implementation for CURD Operations.
+
+Manager.java Class Handles all the Curd Operation For Customer and SalesRepresentative Tables.
+
+Note : First Add data to Sales Representative Table. Then Add Data to Customer Table.
+
+4)Test CustomerManager.java and SalesRepresentativeManager.java
+
+JUnit Test Classes :
+
+CustomerManagerTest.java
+SalesRepresentativeManager.java
+
+Test CURD Operation Methods For Customer.email , Customer.name , Customer.age, SalesRepresentative.name , SalesRepresentative.salary 
+
+5) persistence.xml
+
+This File Contains Class Information and connection properties to connect to MySql Workbench Database.
+ 
+ 
+Question 2:
+
+1) cjv805.lab3.model Package contains Contract.java Class which contains Instance Variables 
+like Contract ID, Description ,Value ,Sales Representative , Customer Details.
+These objects represent a contract secured by a single sales representative and agreed to by a singer customer.
+
+ContractManager.java Class is used to Create Contract Table and Populate Data in it.
+
+
+2) ListData.java
+
+This Class is used to Perform Two Task to Display Customer Information and Contract Information .
+
+queryAllCustomer_NamedQuery() Method will make use of Named Query Built in Customer Class 
+and Display Customer Names and Email.
+
+queryAllContractDetails() Method will Fetch all Contract Details between Customer and Sales Representative 
+with Customer Names and Sales Representative ID , Name.
+
+ListDataTest.java
+
+This Class will create JUnit test class for 1)queryAllCustomer_NamedQuery() Method
+and 2) queryAllContractDetails() Method.
+
+It will Test Methods with the Data stored in the Customer and Contract Tables.
